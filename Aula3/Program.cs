@@ -9,7 +9,11 @@ namespace Program
     {
         public string Nome { get; set; }
         public int Matricula { get; set; }
+
         public Curso Curso { get; set; }
+
+
+
 
         public Aluno(string nome, int matricula, Curso curso)
         {
@@ -24,6 +28,11 @@ namespace Program
             Curso.ExibirDisciplinas();
         }
 
+        public override string ToString()
+            {
+                return $"Nome: {Nome}, Matrícula: {Matricula}, Curso: {Curso.nomeCurso}";
+            }
+
 
     }
     class Curso
@@ -31,6 +40,11 @@ namespace Program
         public string nomeCurso { get; set; }
         public int codigoCurso { get; set; }
         public List<Disciplina> Disciplinas { get; set; }
+
+         public override string ToString()
+            {
+                return $"Curso: {nomeCurso}, Código: {codigoCurso}";
+            }
 
 
         public Curso(string nomeCurso, int codigoCurso)
@@ -63,15 +77,20 @@ namespace Program
         }
     }
     class Disciplina
-{
-    public string nomeDisciplina { get; set; }
-    public int codigoDisciplina { get; set; }
+        {
+            public string nomeDisciplina { get; set; }
+            public int codigoDisciplina { get; set; }
 
-    public Disciplina(string nomeDisciplina, int codigoDisciplina)
-    {
-        this.nomeDisciplina = nomeDisciplina;
-        this.codigoDisciplina = codigoDisciplina;
-    }
+            public Disciplina(string nomeDisciplina, int codigoDisciplina)
+            {
+                this.nomeDisciplina = nomeDisciplina;
+                this.codigoDisciplina = codigoDisciplina;
+            }
+            public override string ToString()
+                {
+                    return $"Nome: {nomeDisciplina}, Código: {codigoDisciplina}";
+                }
+
 
 }
 
