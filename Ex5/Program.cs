@@ -13,7 +13,8 @@ namespace CalculadoraFinanceira
                 Console.WriteLine("2. Juros Compostos");
                 Console.WriteLine("3. Valor Presente Líquido (VPL)");
                 Console.WriteLine("4. Taxa Interna de Retorno (TIR)");
-                Console.WriteLine("5. Sair");
+                Console.WriteLine("5. Mostrar Investimento Anual");
+                Console.WriteLine("6. Sair");
                 Console.Write("Escolha uma opção: ");
                 
                 string opcao = Console.ReadLine();
@@ -33,6 +34,9 @@ namespace CalculadoraFinanceira
                         CalcularTIR();
                         break;
                     case "5":
+                        CalcularInvestimentoAnual();
+                        break;
+                    case "6":
                         return;
                     default:
                         Console.WriteLine("Opção inválida. Tente novamente.");
@@ -140,6 +144,24 @@ namespace CalculadoraFinanceira
             }
 
             return tir;
+        }
+        static void CalcularInvestimentoAnual()
+        {
+            Console.Write("Capital Inicial (C): ");
+            double capital = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Taxa de Juros (i) em %: ");
+            double taxa = Convert.ToDouble(Console.ReadLine()) / 100;
+
+            Console.Write("Tempo (t) em anos: ");
+            int tempo = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Investimento ao longo dos anos:");
+            for (int i = 1; i <= tempo; i++)
+            {
+                double montante = capital * Math.Pow((1 + taxa), i);
+                Console.WriteLine($"Ano {i}: R$ {montante:F2}");
+            }
         }
     }
 }
