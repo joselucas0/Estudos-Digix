@@ -1,0 +1,15 @@
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.AssemblyInfoInputs.cache
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.AssemblyInfo.cs
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.csproj.CoreCompileInputs.cache
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.sourcelink.json
+C:\Users\joselucas\Desktop\Projeto\Aula3\bin\Debug\net8.0\Aula3.exe
+C:\Users\joselucas\Desktop\Projeto\Aula3\bin\Debug\net8.0\Aula3.deps.json
+C:\Users\joselucas\Desktop\Projeto\Aula3\bin\Debug\net8.0\Aula3.runtimeconfig.json
+C:\Users\joselucas\Desktop\Projeto\Aula3\bin\Debug\net8.0\Aula3.dll
+C:\Users\joselucas\Desktop\Projeto\Aula3\bin\Debug\net8.0\Aula3.pdb
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.dll
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\refint\Aula3.dll
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.pdb
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\Aula3.genruntimeconfig.cache
+C:\Users\joselucas\Desktop\Projeto\Aula3\obj\Debug\net8.0\ref\Aula3.dll
