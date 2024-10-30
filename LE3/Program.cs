@@ -23,11 +23,10 @@ class Program
         }
     }
 
-    /// <summary>
     /// Extrai os dois primeiros caracteres do número como DDD.
-    /// </summary>
-    /// <param name="numeroTelefone">Número de telefone no formato XX XXXXX-XXXX.</param>
-    /// <returns>Retorna o DDD se o formato estiver correto, caso contrário null.</returns>
+
+    /// <parametro name="numeroTelefone">Número de telefone no formato XX XXXXX-XXXX.</param>
+    /// <retorna>Retorna o DDD se o formato estiver correto, caso contrário null.</returns>
     static string ExtrairDDD(string numeroTelefone)
     {
         // Verifica se o número de telefone possui o formato correto

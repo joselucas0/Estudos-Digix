@@ -9,7 +9,7 @@ class Program
         Console.Write("Por favor, insira sua senha: ");
         string senha = Console.ReadLine();
 
-        if (VerificaSenha(senha))
+        if (VerificaSenha(senha)) //se a senha é true, entra no if
         {
             Console.WriteLine("Acesso autorizado. Bem-vindo!");
         }
@@ -19,11 +19,11 @@ class Program
         }
     }
 
-    /// <summary>
+
     /// Verifica se a senha fornecida corresponde à senha correta.
-    /// </summary>
-    /// <param name="senha">Senha inserida pelo usuário.</param>
-    /// <returns>Retorna true se a senha estiver correta, caso contrário false.</returns>
+  
+    /// <parametro ="senha">Senha inserida pelo usuário.</param>
+    /// <retornos>Retorna true se a senha estiver correta, caso contrário false.</returns>
     static bool VerificaSenha(string senha)
     {
         const string senhaCorreta = "Digix";
