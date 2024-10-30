@@ -30,11 +30,6 @@
      {  
         int lado;
          Console.WriteLine("Digite o lado do quadrado:");
-     //calculo area quadrado
-     public static double AreaQuadrado(int lado)
-     {  
-         return Math.Pow(lado, 2);
-     }
          lado = Convert.ToInt32(Console.ReadLine());
          return Math.Pow(lado, 2);
      }
