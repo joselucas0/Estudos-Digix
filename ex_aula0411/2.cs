@@ -2,12 +2,12 @@ using System;
 
 namespace ex_2{
     class Program{
-        // Criar matriz 4x4
+        // criar matriz 4x4
         static int[,] matriz = new int[4, 4];
-        // Gerador de números aleatórios
+        // gerador de números aleatórios
         static Random rnd = new Random();
 
-        // Função para preencher a matriz com valores aleatórios
+        // função para preencher a matriz com valores aleatórios
         static void PreencherMatriz(){
             for (int i = 0; i < matriz.GetLength(0); i++){
                 for (int j = 0; j < matriz.GetLength(1); j++){
@@ -16,7 +16,7 @@ namespace ex_2{
             }
         }
 
-        // Função para calcular e exibir a soma das linhas da matriz
+        // função para calcular e exibir a soma das linhas da matriz
         static void CalcularSomaLinhas(){
             for (int i = 0; i < matriz.GetLength(0); i++){
                 int somaLinhas = 0;
@@ -28,10 +28,10 @@ namespace ex_2{
         }
 
         static void Main(string[] args){
-            // Preencher a matriz com valores aleatórios
+            // preencher a matriz com valores aleatórios
             PreencherMatriz();
 
-            // Exibir a matriz
+            // exibir a matriz
             Console.WriteLine("Matriz 4x4 com valores aleatórios:");
             for (int i = 0; i < matriz.GetLength(0); i++){
                 for (int j = 0; j < matriz.GetLength(1); j++){
@@ -40,7 +40,7 @@ namespace ex_2{
                 Console.WriteLine();
             }
 
-            // Calcular e exibir a soma das linhas
+            // calcular e exibir a soma das linhas
             Console.WriteLine("\nSoma dos elementos de cada linha:");
             CalcularSomaLinhas();
         }

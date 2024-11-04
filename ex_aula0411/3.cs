@@ -1,16 +1,16 @@
 using System;
 
-namespace Palindromo
+namespace ex3
 {
     class Program
     {
         static bool EhPalindromo(int numero)
         {
-            // Armazena o número original para comparação
+            // armazena o número original para comparação
             int original = numero;
             int reverso = 0;
 
-            // Reverte o número
+            // reverte o número
             while (numero > 0)
             {
                 int digito = numero % 10;
@@ -18,7 +18,7 @@ namespace Palindromo
                 numero /= 10;
             }
 
-            // Verifica se o número original é igual ao seu reverso
+            // verificar se o número original é igual ao seu reverso
             return original == reverso;
         }
 
