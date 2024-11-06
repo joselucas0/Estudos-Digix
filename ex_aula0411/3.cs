@@ -1,40 +1,32 @@
-using System;
+// namespace exfunc3{
+//     public class Ex3 {
 
-namespace ex3
-{
-    class Program
-    {
-        static bool EhPalindromo(int numero)
-        {
-            // armazena o número original para comparação
-            int original = numero;
-            int reverso = 0;
 
-            // reverte o número
-            while (numero > 0)
-            {
-                int digito = numero % 10;
-                reverso = (reverso * 10) + digito;
-                numero /= 10;
-            }
 
-            // verificar se o número original é igual ao seu reverso
-            return original == reverso;
-        }
+//         public static string EhPalidromo(int[] vetor)
+//         {
+//             bool ehPalindromo = true;
 
-        static void Main(string[] args)
-        {
-            Console.Write("Digite um número inteiro: ");
-            int numero = int.Parse(Console.ReadLine());
+//             for (int i = 0; i < vetor.Length / 2; i++)
+//             {
+//                 if (vetor[i] != vetor[vetor.Length - 1 - i])
+//                 {
+//                     ehPalindromo = false;
+//                     break;
+//                 }
+//             }
 
-            if (EhPalindromo(numero))
-            {
-                Console.WriteLine($"O número {numero} é um palíndromo.");
-            }
-            else
-            {
-                Console.WriteLine($"O número {numero} não é um palíndromo.");
-            }
-        }
-    }
-}
+//             string resultado = ehPalindromo ? "sim" : "não";
+
+
+//             return $"O vetor {string.Join(", ", vetor)} é um palíndromo? {resultado}";
+//         }
+
+//         public static void Main() {
+
+//             int[] vetor = {1, 2, 3, 3, 2, 1};
+
+//             Console.WriteLine(EhPalidromo(vetor));
+//         }
+//     }
+// }

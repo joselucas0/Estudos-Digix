@@ -1,39 +1,29 @@
-using System;
+// namespace exfunc4{
+//     public class Ex4 {
 
-namespace ex4
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.Write("Digite o tamanho da matriz (n x n): ");
-            int n = int.Parse(Console.ReadLine());
-            int[,] matriz = new int[n, n];
-            
-            // Preenchendo a matriz com valores fornecidos pelo usuário
-            Console.WriteLine($"Digite os elementos da matriz {n}x{n}:");
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    Console.Write($"Elemento [{i + 1},{j + 1}]: ");
-                    matriz[i, j] = int.Parse(Console.ReadLine());
-                }
-            }
 
-            int somaDiagonalPrincipal = 0;
-            int somaDiagonalSecundaria = 0;
+//         public static void SomaDiagonais(int[,] matriz)
+//         {
 
-            // Calculando a soma das diagonais principal e secundária
-            for (int i = 0; i < n; i++)
-            {
-                somaDiagonalPrincipal += matriz[i, i]; // Diagonal principal
-                somaDiagonalSecundaria += matriz[i, n - i - 1]; // Diagonal secundária
-            }
+//             int somaDiagonalPrincipal = 0;
+//             int somaDiagonalSecundaria = 0;
 
-            // Exibindo os resultados
-            Console.WriteLine($"\nSoma da diagonal principal: {somaDiagonalPrincipal}");
-            Console.WriteLine($"Soma da diagonal secundária: {somaDiagonalSecundaria}");
-        }
-    }
-}
+//             for (int i = 0; i < matriz.GetLength(0); i++) {
+//                 somaDiagonalPrincipal += matriz[i, i];
+//                 somaDiagonalSecundaria += matriz[i, matriz.GetLength(0) - 1 - i];
+//             }
+
+//             Console.WriteLine("Soma da diagonal principal: " + somaDiagonalPrincipal);
+//             Console.WriteLine("Soma da diagonal secundaria: " + somaDiagonalSecundaria);
+
+
+//         }
+//         public static void Main() {
+//              //Matriz 4x4
+//              int[,] matriz = new int[,] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+//              SomaDiagonais(matriz);
+ 
+//         }
+//     }
+// }
+

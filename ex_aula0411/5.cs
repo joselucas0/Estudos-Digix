@@ -1,48 +1,42 @@
-using System;
+/*namespace exfunc5{
+    public class Ex5 {
 
-namespace ex5
-{
-    class Program
-    {
-        static void Main(string[] args)
+
+        private static void RecebeGiraMatriz(int [,] matriz) {
+            for (int i = 0; i < matriz.GetLength(0) / 2; i++) {
+                for (int j = i; j < matriz.GetLength(1) - i - 1; j++) {
+                    int temp = matriz[i, j];
+                    matriz[i, j] = matriz[matriz.GetLength(0) - 1 - j, i];
+                    matriz[matriz.GetLength(0) - 1 - j, i] = matriz[matriz.GetLength(0) - 1 - i, matriz.GetLength(1) - 1 - j];
+                    matriz[matriz.GetLength(0) - 1 - i, matriz.GetLength(1) - 1 - j] = matriz[j, matriz.GetLength(1) - 1 - i];
+                    matriz[j, matriz.GetLength(1) - 1 - i] = temp;
+                }
+            }
+        }
+
+        public static void ExibeMatriz(int[,] matriz)
         {
-            Console.Write("Digite o tamanho da matriz (n x n): ");
-            int n = int.Parse(Console.ReadLine());
-            int[,] matriz = new int[n, n];
-            
-            // preenchendo a matriz com valores fornecidos pelo usuário
-            Console.WriteLine($"Digite os elementos da matriz {n}x{n}:");
-            for (int i = 0; i < n; i++)
-            {
-                for (int x = 0; x < n; x++)
-                {
-                    Console.Write($"Elemento [{i + 1},{x + 1}]: ");
-                    matriz[i, x] = int.Parse(Console.ReadLine());
-                }
-            }
-
-            // criando uma nova matriz para armazenar a rotação
-            int[,] matrizRotacionada = new int[n, n];
-
-            // rotacionando a matriz 90 graus no sentido horário
-            for (int i = 0; i < n; i++)
-            {
-                for (int x = 0; x < n; x++)
-                {
-                    matrizRotacionada[x, n - i - 1] = matriz[i, x];
-                }
-            }
-
-            // exibindo a matriz rotacionada
-            Console.WriteLine("\nMatriz rotacionada 90 graus no sentido horário:");
-            for (int i = 0; i < n; i++)
-            {
-                for (int x = 0; x < n; x++)
-                {
-                    Console.Write(matrizRotacionada[i, x] + "\t");
+            Console.WriteLine("Matriz rotacionada 90 graus no sentido horário:");
+            for (int i = 0; i < matriz.GetLength(0); i++) {
+                for (int j = 0; j < matriz.GetLength(1); j++) {
+                    Console.Write($"{matriz[i, j]} ");
                 }
                 Console.WriteLine();
             }
         }
+
+
+        
+        public static void Main() {
+            int[,] matriz = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+
+
+            RecebeGiraMatriz(matriz);
+            ExibeMatriz(matriz);
+        }
     }
-}
+}*/
