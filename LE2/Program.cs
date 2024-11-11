@@ -26,7 +26,7 @@ class Program
     /// <retornos>Retorna true se a senha estiver correta, caso contrário false.</returns>
     static bool VerificaSenha(string senha)
     {
-        const string senhaCorreta = "Digix";
+        const string senhaCorreta = "palmeiras";
         return senha == senhaCorreta;
     }
 }
