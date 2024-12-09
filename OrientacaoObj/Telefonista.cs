@@ -4,7 +4,7 @@ namespace EstruturasDeControle
     {
         public string EstacaoDeTrabalho { get; set; }
 
-        public Telefonista(string nome, double salario, string cpf, string estacaoDeTrabalho)
+        public Telefonista(string nome,  string cpf, double salario, string estacaoDeTrabalho)
             : base(nome, cpf, salario)
         {
             EstacaoDeTrabalho = estacaoDeTrabalho;
@@ -20,10 +20,10 @@ namespace EstruturasDeControle
         public override void ImprimirDados()
         {
             System.Console.WriteLine($"Nome: {Nome}");
-            System.Console.WriteLine($"CPF: {CPF}");
+            System.Console.WriteLine($"CPF: {Cpf}");
             System.Console.WriteLine($"Salário: {Salario}");
             System.Console.WriteLine($"Estação de Trabalho: {EstacaoDeTrabalho}");
-            System.Console.WriteLine($"Bonificação: {GetBonificacao()}");
+            System.Console.WriteLine($"Bonificação: {CalcularAdicional()}");
         }
     }
 }

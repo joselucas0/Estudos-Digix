@@ -4,7 +4,7 @@ namespace EstruturasDeControle
     {
         public string Setor { get; set; }
 
-        public Gerente(string nome, double salario, string cpf, string setor)
+        public Gerente(string nome, string cpf, double salario, string setor)
             : base(nome, cpf, salario)
         {
             Setor = setor;
@@ -18,10 +18,10 @@ namespace EstruturasDeControle
         public override void ImprimirDados()
         {
             System.Console.WriteLine($"Nome: {Nome}");
-            System.Console.WriteLine($"CPF: {CPF}");
+            System.Console.WriteLine($"CPF: {Cpf}");
             System.Console.WriteLine($"Salário: {Salario}");
             System.Console.WriteLine($"Setor: {Setor}");
-            System.Console.WriteLine($"Bonificação: {GetBonificacao()}");
+            System.Console.WriteLine($"Bonificação: {CalcularAdicional()}");
         }
     }
 }

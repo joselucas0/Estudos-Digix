@@ -4,7 +4,7 @@ namespace EstruturasDeControle
     {
         public string Ramal { get; set; }
 
-        public Secretaria(string nome, double salario, string cpf, string ramal)
+        public Secretaria(string nome, string cpf, double salario,  string ramal)
             : base(nome, cpf, salario)
         {
             Ramal = ramal;
@@ -18,9 +18,9 @@ namespace EstruturasDeControle
         public override void ImprimirDados()
         {
             Console.WriteLine($"Nome: {Nome}");
-            Console.WriteLine($"CPF: {CPF}");
+            Console.WriteLine($"CPF: {Cpf}");
             Console.WriteLine($"Salário: {Salario}");
-            Console.WriteLine($"Bonificação: {GetBonificacao()}");
+            Console.WriteLine($"Bonificação: {CalcularAdicional()}");
             Console.WriteLine($"Ramal: {Ramal}");
         }
 
