@@ -15,7 +15,7 @@ namespace Aula21
             Bibliotecas.Add(biblioteca);
         }
 
-        public Biblioteca BuscarBiblioteca(string nome)
+        public Biblioteca? BuscarBiblioteca(string nome)
         {
             return Bibliotecas.FirstOrDefault(b => b.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase));
         }

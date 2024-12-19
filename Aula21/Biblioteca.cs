@@ -24,7 +24,7 @@ namespace Aula21
             Funcionarios.Add(funcionario);
         }
 
-        public Livro BuscarLivro(string titulo)
+        public Livro? BuscarLivro(string titulo)
         {
             return Catalogo.BuscarLivroPorTitulo(titulo);
         }

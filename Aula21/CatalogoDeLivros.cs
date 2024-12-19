@@ -15,7 +15,7 @@ namespace Aula21
             Livros.Add(livro);
         }
 
-        public Livro BuscarLivroPorTitulo(string titulo)
+        public Livro? BuscarLivroPorTitulo(string titulo)
         {
             return Livros.FirstOrDefault(livro => livro.Titulo.Equals(titulo, StringComparison.OrdinalIgnoreCase));
         }
