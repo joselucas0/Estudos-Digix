@@ -38,5 +38,12 @@ Thumbs.db
 project.lock.json
 project.fragment.lock.json
 
+# Adicionado: Ignore arquivos de projetos e soluções
+*.csproj
+*.sln
+
+# Adicionado: Ignore arquivos .cache
+*.cache
+
 # Manter apenas arquivos de código fonte .cs
 !**/*.cs
