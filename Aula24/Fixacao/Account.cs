@@ -45,7 +45,7 @@ namespace Fixacao
         }
 
         // Sobrescrevendo o método ToString para exibir os detalhes da reserva
-        public override string ToString()
+        public override string? ToString()
         {
             return $"Quarto: {RoomNumber}, Check-in: {CheckIn:dd/MM/yyyy}, Check-out: {CheckOut:dd/MM/yyyy}, " +
                    $"Duração: {Duration()} noite(s)";
