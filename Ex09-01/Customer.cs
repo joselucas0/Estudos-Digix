@@ -1,31 +1,25 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Ex09_01
+public class Customer
 {
-    class Customer
-{
-    public string Name { get; }
-    public string Address { get; }
-    public DateTime DateOfBirth { get; }
-    public int CardNumber { get; }
-    private string PIN;
+    public string Name { get; set; }
+    public string Address { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public int CardNumber { get; set; }
+    private string Pin { get; set; }
 
-    public Customer(string name, string address, DateTime dob, int cardNumber, string pin)
+    public Customer(string name, string address, DateTime dateOfBirth, int cardNumber, string pin)
     {
         Name = name;
         Address = address;
-        DateOfBirth = dob;
+        DateOfBirth = dateOfBirth;
         CardNumber = cardNumber;
-        PIN = pin;
+        Pin = pin;
     }
 
-    public void VerifyPassword(string pin)
+    public bool VerifyPassword(string pin)
     {
-        if (PIN != pin)
-            throw new Exceptio.AuthenticationException("PIN inválido.");
+        if (pin == null)
+            throw new ArgumentNullException(nameof(pin), "O PIN fornecido é nulo.");
+        
+        return Pin == pin;
     }
- }
 }
