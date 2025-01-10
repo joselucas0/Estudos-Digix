@@ -1,0 +1,27 @@
+Principais Mudanças e Justificativas:
+Inclusão da Classe TransactionManager:
+
+Motivo: Centraliza a gestão das transações, permitindo um controle mais eficiente e histórico das operações realizadas no sistema bancário.
+Benefícios: Facilita a implementação de funcionalidades como relatórios de transações, análises de comportamento dos clientes e detecção de fraudes.
+Criação da Classe Transaction:
+
+Motivo: Representa uma transação individual, armazenando informações como tipo, valor, data e saldo pós-transação.
+Benefícios: Permite rastrear o histórico de cada conta, realizar auditorias e gerar extratos detalhados.
+Inclusão do Atributo managedBy na Classe ATM:
+
+Motivo: Estabelece uma relação clara entre o caixa eletrônico e o banco responsável por sua gestão.
+Benefícios: Facilita a manutenção e o controle dos caixas eletrônicos, além de permitir a implementação de políticas específicas por banco.
+Refinamento da Classe Account:
+
+Motivo: Introdução de métodos mais específicos para as operações de depósito e saque, permitindo a implementação de regras de negócio específicas para cada tipo de conta.
+Benefícios: Aumenta a flexibilidade do sistema, permitindo a criação de diferentes tipos de contas com características únicas.
+Criação da Enumeração TransactionType:
+
+Motivo: Define os possíveis tipos de transações (depósito e saque), proporcionando uma forma mais clara e organizada de representar as operações.
+Benefícios: Melhora a legibilidade do código e facilita a implementação de novas funcionalidades relacionadas a diferentes tipos de transações.
+Benefícios dos Refinamentos:
+Maior detalhamento e precisão: As classes e relacionamentos foram refinados para representar de forma mais precisa os conceitos do sistema bancário.
+Melhor organização: A estrutura do diagrama está mais organizada e coesa, facilitando a compreensão do sistema como um todo.
+Flexibilidade: A introdução de classes abstratas e interfaces permite a criação de novos tipos de contas e transações de forma mais fácil.
+Reusabilidade: A classe TransactionManager pode ser reutilizada em diferentes partes do sistema, promovendo a modularidade e a manutenção.
+Extensibilidade: O diagrama pode ser facilmente expandido para incluir novas funcionalidades, como pagamentos de contas, transferências entre contas e investimentos.
